@@ -27,13 +27,6 @@ static std::optional<std::vector<std::byte>> ReadFile(const std::string &path)
     return std::move(contents);
 }
 
-void GetCoordinates(float &coord, std::string coord_name, int range_start = 0, int range_end = 100) {
-    std::cout << coord_name << ": ";
-    std::cin >> coord;
-    if (coord < range_start || coord > range_end)
-        std::cout << "[ERROR]: Value for " << coord_name << " is out of map range!" << std::endl;
-}
-
 int main(int argc, const char **argv)
 {    
     std::string osm_data_file = "";
@@ -61,10 +54,7 @@ int main(int argc, const char **argv)
 
     float start_x = 0.0f, start_y = 0.0f, end_x = 0.0f, end_y = 0.0f;
     cout << "Enter values for start_x, start_y, end_x, end_y one by one [limit: 0 - 100]:" << std::endl;
-    GetCoordinates(start_x, "start_x");
-    GetCoordinates(start_x, "start_y");
-    GetCoordinates(start_x, "end_x");
-    GetCoordinates(start_x, "end_y");
+    std::cin >> start_x >> start_y >> end_x >> end_y;
 
     // Build Model.
     RouteModel model{osm_data};
