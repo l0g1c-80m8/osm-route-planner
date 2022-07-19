@@ -74,7 +74,7 @@ std::vector<RouteModel::Node> RoutePlanner::ConstructFinalPath(RouteModel::Node 
     }
 
     path_found.push_back(*current_node);
-
+    std::reverse(std::begin(path_found),std::end(path_found));
     distance *= m_Model.MetricScale();
 
     return path_found;
