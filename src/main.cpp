@@ -27,7 +27,7 @@ static std::optional<std::vector<std::byte>> ReadFile(const std::string &path)
     return std::move(contents);
 }
 
-void GetCoordinates(float &coord, string coord_name, int range_start = 0, int range_end = 100) {
+void GetCoordinates(float &coord, std::string coord_name, int range_start = 0, int range_end = 100) {
     std::cout << coord_name << ": ";
     std::cin >> coord;
     if (coord < range_start || coord > range_end)
