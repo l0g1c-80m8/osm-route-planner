@@ -53,7 +53,7 @@ int main(int argc, const char **argv)
     }
 
     float start_x = 0.0f, start_y = 0.0f, end_x = 0.0f, end_y = 0.0f;
-    cout << "Enter values for start_x, start_y, end_x, end_y one by one [limit: 0 - 100]:" << std::endl;
+    std::cout << "Enter values for start_x, start_y, end_x, end_y one by one [limit: 0 - 100]:" << std::endl;
     std::cin >> start_x >> start_y >> end_x >> end_y;
 
     // Build Model.
