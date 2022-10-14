@@ -61,7 +61,7 @@ The testing executable is also placed in the `build` directory. From within `bui
 ```
 
 ## Troubleshooting
-* Some students have reported issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
+* Theme may be some issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
 * For MAC Users cmake issues: Comment these lines from CMakeLists.txt under P0267_RefImpl
     ```
     if( NOT DEFINED IO2D_WITHOUT_SAMPLES )
