@@ -1,6 +1,6 @@
 # Route Planning Project
 
-Planning a route using A* algorithm on data from Open Street Map Project.
+Planning a route using A* algorithm on data from Open Street Map project.
 
 <img src="map.png" width="600" height="450" />
 
