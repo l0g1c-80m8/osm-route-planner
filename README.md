@@ -8,11 +8,11 @@ Planning a route using A* algorithm on data from Open Street Map project.
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-https://github.com/l0g1c-80m8/osm-route-planner.git --recurse-submodules
+git clone https://github.com/l0g1c-80m8/osm-route-planner.git --recurse-submodules
 ```
 or with SSH:
 ```
-git@github.com:l0g1c-80m8/osm-route-planner.git --recurse-submodules
+git clone git@github.com:l0g1c-80m8/osm-route-planner.git --recurse-submodules
 ```
 
 ## Dependencies for Running Locally
